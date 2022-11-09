@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trancoso/BA | GLVR</title>
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
+        defer></script>
+    <!-- Links dos botões de acessibilidade  -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Links CSS  -->
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="/destinos/destinos.css">
+    <!-- Link cdn font-awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- navbar principal  -->
+    <nav class="navbar sticky-top navbar-expand-lg ps-5 pe-5 navbar-light navbar-principal dyn-font">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-paper-plane"></i> GLVR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <menu class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Como Chegar</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Sobre
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#gastronomia">Gastronomia</a></li>
+                            <li><a class="dropdown-item" href="#">Natureza</a></li>
+                            <li><a class="dropdown-item" href="#entretenimento">Entretenimento</a></li>
+                            <li><a class="dropdown-item" href="#vida-noturna">Vida Noturna</a></li>
+                            <li><a class="dropdown-item" href="#">Cultura e História</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Dicas</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hospedagem</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="#">Transporte</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center acessibilidade">
+                    <div class="font me-1">
+                        <a class="nav-link" href="#">
+                            <span class="material-symbols-outlined text-black" accesskey="3"
+                                onclick="window.toggleContrast()" onkeydown="window.toggleContrast()"><span>
+                                    contrast</span></a>
+                    </div>
+                    <div class="d-flex align-items-center acessibilidade">
+                        <div class="font me-4">
+                            <a href="#" class="dyn-font text-black" onclick="increaseFont()">A+</a> | <a href="#" class="dyn-font text-black"
+                                onclick="decreaseFont()">A-</a>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end dyn-font">
+                    <button class="btn btn-1 btn-light me-md-2" type="button">Entrar</button>
+                    <button class="btn btn-2" type="button">Cadastrar-se</button>
+                </div>
+            </menu>
+        </div>
+    </nav>
+    <!-- fim navbar principal  -->
+
+    <!-- Header -->
+    <div id="carouselExampleControls" class="carousel slide dyn-font" data-bs-ride="carousel">
+        <div class="carousel-inner carousel-inner-header">
+            <div class="carousel-item active">
+                <img src="/destinos/Trancoso/images/slides/trancoso-slide1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block carousel-header-texto">
+                    <h1>Viaje para <br>
+                        <span class="text-purple">Trancoso</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/destinos/Trancoso/images/slides/trancoso-slide2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block carousel-header-texto">
+                    <h1>Viaje para <br>
+                        <span class="text-purple">Trancoso</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="carousel-item"></div>
+            <img src="/destinos/Trancoso/images/slides/trancoso-slide3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block carousel-header-texto">
+                <h1>Viaje para <br>
+                    <span class="text-purple">Trancoso</span>
+                </h1>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Fim do Header -->
+
+    <!-- Como Chegar -->
+    <section class="container p-5 dyn-font">
+        <h6 class="text-purple text-center my-3 dyn-font">TIPOS DE VIAGEM</h6>
+        <div class="row">
+            <h2 class="header-subtitulo text-center dyn-font">Como chegar?</h2>
+        </div>
+        <div class="card-body">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d244847.62254717277!2d-39.31688868054764!3d-16.488490206845185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x7369a3d6e702c4d%3A0xd46fc44ae03d2bca!2sAeroporto%20Internacional%20de%20Porto%20Seguro%20(BPS)%20-%20Estrada%20do%20Aeroporto%20-%20Cidade%20Alta%2C%20Porto%20Seguro%20-%20BA!3m2!1d-16.440931199999998!2d-39.079934!4m5!1s0x7369c75945eb6e1%3A0x6f151cc44b9306f5!2sTrancoso%2C%20Porto%20Seguro%20-%20BA!3m2!1d-16.5917896!2d-39.1027984!5e0!3m2!1spt-BR!2sbr!4v1665454555345!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <!-- Fim Como Chegar -->
+
+    <!-- Hospedagem -->
+    <div class="container-fluid p-5 slide-2 container-hospedagem">
+        <h6 class="text-uppercase text-purple text-center dyn-font">HOSPEDAGEM</h6>
+        <h2 class="header-subtitulo text-center pt-3 pb-5 dyn-font">Onde se Hospedar</h2>
+
+        <div id="carouselHospedagem" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner carousel-inner-hospedagem">
+                <div class="carousel-item active">
+                    <div class="hospedagem-wrapper">
+                        <div class="card">
+                            <img src="./images/hospedagem/hospedagem-1.jpg"
+                                class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title dyn-font">Pousada Villa Bahia</h5>
+                                <p class="card-text dyn-font">Localizada a 1,3 km da Praia de Trancoso, a Pousada
+                                    Villa Bahia oferece acomodações com piscina ao ar livre, estacionamento privativo
+                                    gratuito e lounge compartilhado. </p>
+                                <a href="https://www.booking.com/hotel/br/pousada-villa-bahia.pt-br.html?sid=804c2859bf62e82a92a5ffc70f42275e&aid=2230190&ucfs=1&arphpl=1&dest_id=-676554&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=a1e1144d95e00088&srepoch=1665456795&from_beach_sr=1&beach_sr_walking_distance=1088&from=searchresults&activeTab=main"
+                                    target="_blank" class="btn-3 btn dyn-font">Reserve</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/hospedagem/hospedagem-2.jpg"
+                                class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title dyn-font">Vila Rudá Trancoso</h5>
+                                <p class="card-text dyn-font">Dispondo de piscina, bicicletas gratuitas, jardim e vista da
+                                    piscina, a Vila Rudá Trancoso está localizada em Trancoso e oferece acomodações com
+                                    Wi-Fi gratuito.</p>
+                                <a href="https://www.booking.com/hotel/br/vila-ruda.pt-br.html?sid=804c2859bf62e82a92a5ffc70f42275e&aid=2230190&ucfs=1&arphpl=1&dest_id=-676554&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=a1e1144d95e00088&srepoch=1665456795&from_beach_sr=1&beach_sr_walking_distance=583&from_sustainable_property_sr=1&from=searchresults#hotelTmpl"
+                                    target="_blank" class="btn-3 btn dyn-font">Reserve</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/hospedagem/hospedagem-3.jpg"
+                                class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title dyn-font">Pousada Mundo Verde</h5>
+                                <p class="card-text dyn-font">A Pousada Mundo Verde é um local de gerência familiar,
+                                    situado em uma área ampla, que oferece vista panorâmica para o Oceano Atlântico.</p>
+                                <a href="https://www.booking.com/hotel/br/pousada-mundo-verde.pt-br.html?sid=804c2859bf62e82a92a5ffc70f42275e&aid=2230190&ucfs=1&arphpl=1&dest_id=-676554&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=a1e1144d95e00088&srepoch=1665456795&from_beach_sr=1&beach_sr_walking_distance=828&from=searchresults&activeTab=main"
+                                    target="_blank" class="btn-3 btn dyn-font">Reserve</a>
+                            </div>
+                        </div>
+                        <!-- <div class="card">
+                            <img src="Ahttps://t-cf.bstatic.com/xdata/images/hotel/max1024x768/307649641.jpg?k=00f787f388585262d05cd7bbd8059b52c3749c85ade922935978c5d79294cf2c&o=&hp=1"
+                                class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Pousada do Bosque
+                                </h5>
+                                <p class="card-text">Situada a apenas 100 metros da histórica Praça do Quadrado e a 500
+                                    metros do mar, a Pousada do Bosque oferece acomodações em estilo rústico, além de
+                                    jardim e piscina.
+                                </p>
+                                <a href="https://www.booking.com/hotel/br/pousada-do-bosque.pt-br.html?sid=804c2859bf62e82a92a5ffc70f42275e&aid=2230190&ucfs=1&arphpl=1&dest_id=-676554&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=a1e1144d95e00088&srepoch=1665456795&from_beach_sr=1&beach_sr_walking_distance=773&from_sustainable_property_sr=1&from=searchresults#"
+                                    target="_blank" class="btn-3 btn">Reserve</a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hospedagem-wrapper">
+                        <div class="card">
+                            <img src="./images/hospedagem/hospedagem-4.jpg"
+                                class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title dyn-font">Trancoso House Hotel</h5>
+                                <p class="card-text dyn-font">Oferecendo uma piscina ao ar livre em todas as estações e terraço
+                                    ao ar livre, a Trancoso House está localizada a 400 metros da
+                                    Praça do Quadrado.</p>
+                                <a href="https://www.booking.com/hotel/br/trancoso-house.pt-br.html?sid=804c2859bf62e82a92a5ffc70f42275e&aid=2230190&ucfs=1&arphpl=1&dest_id=-676554&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=a1e1144d95e00088&srepoch=1665456795&from_beach_sr=1&beach_sr_walking_distance=927&from_sustainable_property_sr=1&from=searchresults&activeTab=main"
+                                    target="_blank" class="btn-3 btn dyn-font">Reserve</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/hospedagem/hospedagem-5.jpg"
+                                class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title dyn-font">Vila Som do Mar</h5>
+                                <p class="card-text dyn-font">Localizada a somente 50 metros da Praia dos Nativos, a
+                                    Vila Som do Mar oferece quartos com ar-condicionado e uma piscina com
+                                    espreguiçadeiras.</p>
+                                <a href="https://www.booking.com/hotel/br/pousada-som-do-mar.pt-br.html?sid=804c2859bf62e82a92a5ffc70f42275e&aid=2230190&ucfs=1&arphpl=1&dest_id=-676554&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=6&hapos=6&sr_order=popularity&srpvid=a1e1144d95e00088&srepoch=1665456795&from_beach_sr=1&beach_sr_walking_distance=170&from_sustainable_property_sr=1&from=searchresults&activeTab=main"
+                                    target="_blank" class="btn-3 btn dyn-font">Reserve</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/hospedagem/hospedagem-6.jpg"
+                                class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title dyn-font">Pousada Le Refuge</h5>
+                                <p class="card-text dyn-font">Oferecendo piscina ao ar livre, a Pousada Le Refuge fica a 100 m da
+                                    Praia dos Coqueiros. O WiFi gratuito está disponível nas áreas comuns.</p>
+                                <a href="https://www.booking.com/hotel/br/pousada-le-refuge-trancoso.pt-br.html?sid=804c2859bf62e82a92a5ffc70f42275e&aid=2230190&ucfs=1&arphpl=1&dest_id=-676554&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=7&hapos=7&sr_order=popularity&srpvid=a1e1144d95e00088&srepoch=1665456795&from_beach_sr=1&beach_sr_walking_distance=236&from_sustainable_property_sr=1&from=searchresults&activeTab=main"
+                                    target="_blank" class="btn-3 btn dyn-font">Reserve</a>
+                            </div>
+                        </div>
+                        <!-- <div class="card">
+                            <img src="Ahttps://t-cf.bstatic.com/xdata/images/hotel/max1024x768/125173159.jpg?k=03ac82ef524387402fea7d1388614010dad3aa60740ef9cf09ee82a678d474bb&o=&hp=1"
+                                class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Trancoso Pousada</h5>
+                                <p class="card-text">A Pousada Trancoso Bahia é uma pousada encantadora rodeada por uma
+                                    vegetação rica, situada a apenas 500 metros da badalada Praia de Trancoso.</p>
+                                <a href="https://www.booking.com/hotel/br/pousada-trancoso-bahia.pt-br.html?sid=804c2859bf62e82a92a5ffc70f42275e&aid=2230190&ucfs=1&arphpl=1&dest_id=-676554&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=8&hapos=8&sr_order=popularity&srpvid=a1e1144d95e00088&srepoch=1665456795&from_beach_sr=1&beach_sr_walking_distance=1171&from=searchresults&activeTab=main"
+                                    target="_blank" class="btn-3 btn">Reserve</a>
+                            </div>-->
+                        </div> 
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHospedagem"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon dyn-font" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHospedagem"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon dyn-font" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Hospedagem -->
+
+    <!-- Aluguel Carros -->
+
+    <!-- Fim Aluguel Carros -->
+
+    <!-- Cultura e História -->
+    <section class="slide-7 my-3">
+        <div class="imagem-slide-7"></div>
+    
+        <div class="container">
+            <h6 class="text-purple text-center my-3 dyn-font">CULTURA e HISTÓRIA</h6>
+            <div class="row">
+                <div class="col-md-8 dyn-font">
+                    <h1>Conheça mais sobre os<br>lugares que deseja visitar!</h1>
+                    <p class="mt-5 dyn-font">Resgatar as raízes culturais de uma região poderá despertar no
+                        indivíduo<br>a
+                        motivação
+                        e o interesse sobre a sua própria cultura, tornando-o um<br>cidadão mais sensível e
+                        consciente
+                        da
+                        importância de suas raízes para<br>prevenção de sua história.</p>
+                </div>
+                <div class="col-md-4 d-flex align-items-center">
+                    <div class="row d-flex flex-column ">
+                        <a class="col-12 btn-3 btn m-2 dyn-font" href="/Cultura.html">CULTURA</a>
+                        <a class="col-12 btn-3 btn m-2 dyn-font" href="/Historia.html">HISTÓRIA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="imagem-slide-7b"></div>
+    </section>
+    <!-- Fim Cultura e História -->
+
+    <!-- Natureza (Parques) -->
+
+    <!-- Fim Natureza (Parques) -->
+
+    <!-- Gastronomia -->
+    <div class="container-fluid p-5 slide-2">
+        <h6 class="text-uppercase text-purple text-center dyn-font">GASTRONOMIA</h6>
+        <h2 class="header-subtitulo text-center pt-3 pb-5 dyn-font">Descubra o que há de melhor no seu destino!</h2>
+        <section class="container">
+            <div class="row justify-content-center">
+                <div class="col h-100 card-gastronomia">
+                    <div class="card border-0">
+                        <a href="https://www.instagram.com/restaurantecapimsanto/">
+                            <img src="images/gastronomia/T_Capim Santo.jpg" class="card-img-top"
+                                alt="Restaurante Capim Santo em Trancoso/BA">
+                        </a>
+                    </div>
+                    <div
+                        class="card border-0 card-restaurante shadow mt-3 d-flex justify-content-center align-items-center">
+                        <div class="card-body">
+                            <p class="card-text fw-bold dyn-font">Capim Santo</p>
+                            <div class="row d-flex justify-content-center">
+                                <div
+                                    class="col-8 text-nowrap d-flex justify-content-center align-items-center flex-column">
+                                    <img src="./images/gastronomia/$$$$$.svg">
+                                    <img src="./images/gastronomia/5estrelas.svg" class="mt-3">
+                                </div>
+                                <div class="card-title justify-content-center">
+                                    <a href="https://www.instagram.com/restaurantecapimsanto/" class="btn-3 btn mt-4 dyn-font">Mais
+                                        infos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col h-100 card-gastronomia">
+                    <div class="card border-0">
+                        <a href="https://www.instagram.com/flotrancoso/">
+                            <img src="images/gastronomia/T_Flo Trancoso.jpg" class="card-img-top"
+                                alt="Restaurante Flô em Trancoso/BA">
+                        </a>
+                    </div>
+                    <div
+                        class="card border-0 card-restaurante shadow mt-3 d-flex justify-content-center align-items-center">
+                        <div class="card-body">
+                            <p class="card-text fw-bold dyn-font">Flô</p>
+                            <div class="row d-flex justify-content-center">
+                                <div
+                                    class="col-8 text-nowrap d-flex justify-content-center align-items-center flex-column">
+                                    <img src="./images/gastronomia/$$$$$.svg">
+                                    <img src="./images/gastronomia/5estrelas.svg" class="mt-3">
+                                </div>
+                                <div class="card-title justify-content-center">
+                                    <a href="https://www.instagram.com/flotrancoso/" class="btn-3 btn mt-4 dyn-font">Mais
+                                        infos</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col h-100 card-gastronomia">
+                    <div class="card border-0">
+                        <a href="https://www.instagram.com/maritacarestaurante/">
+                            <img src="images/gastronomia/T_Maritaca.jpg" class="card-img-top"
+                                alt="Restaurante Maritaca em Trancoso/BA">
+                        </a>
+                    </div>
+                    <div
+                        class="card border-0 card-restaurante shadow mt-3 d-flex justify-content-center align-items-center">
+                        <div class="card-body">
+                            <p class="card-text fw-bold dyn-font">Maritaca</p>
+                            <div class="row d-flex justify-content-center">
+                                <div
+                                    class="col-8 text-nowrap d-flex justify-content-center align-items-center flex-column">
+                                    <img src="./images/gastronomia/$$$$$.svg">
+                                    <img src="./images/gastronomia/4estrelas.svg" class="mt-3">
+                                </div>
+                                <div class="card-title justify-content-center">
+                                    <a href="https://www.instagram.com/maritacarestaurante/"
+                                        class="btn-3 btn mt-4 dyn-font">Mais
+                                        infos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col h-100 card-gastronomia">
+                    <div class="card border-0">
+                        <a href="https://www.instagram.com/estreladagua/">
+                            <img src="images/gastronomia/T_Estrela DAgua.jpg" class="card-img-top"
+                                alt="Restaurante Estrela D'Água em Trancoso/BA">
+                        </a>
+                    </div>
+                    <div class="card border-0 card-restaurante shadow mt-3">
+                        <div class="card-body">
+                            <p class="card-text fw-bold dyn-font">Estrela D'Água</p>
+                            <div class="row d-flex justify-content-center">
+                                <div
+                                    class="col-8 text-nowrap d-flex justify-content-center align-items-center flex-column">
+                                    <img src="./images/gastronomia/$$$$$.svg">
+                                    <img src="./images/gastronomia/4estrelas.svg" class="mt-3">
+                                </div>
+                                <div class="card-title justify-content-center">
+                                    <a href="https://www.instagram.com/estreladagua/" class="btn-3 btn mt-4 dyn-font">Mais
+                                        infos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Fim Gastronomia -->
+    <!-- Entretenimento -->
+    <section class="container" id="entretenimento">
+
+        <div class="container-fluid slide-2 justify-content-center align-items-center d-flex flex-column">
+            <div class="line mb-4"></div>
+            <h6 class="text-uppercase text-purple text-center dyn-font">ENTRETENIMENTO</h6>
+            <h2 class="header-subtitulo text-center pt-3 mb-3 dyn-font">As melhores opções de entretenimento<br>
+                para você aproveitar</h2>
+
+            <div class="container">
+
+                <div class="row entretenimento">
+                    <div
+                        class="col-md-4 col-sm-12 text-justify p-4 d-flex justify-content-center align-items-center flex-column">
+                        <h5 class="text-center text-purple fw-bold mb-3 dyn-font">Quadrado</h5>
+                        <img src="./images/entretenimento/entretenimento-1.png"
+                            alt="Imagem do local com casas coloridas e árvores"
+                            class="entretenimento-imagens img-fluid mb-3 rounded-3 dyn-font">
+                        <p class="dyn-font">O Quadrado é o centro histórico e o coração da cidade. Um lugar que faz questão de manter sua
+                            arquitetura e atmosfera originais.</p>
+                        <a href="https://www.instagram.com/quadradodetrancoso/" class="btn btn-3 dyn-font"> Saiba mais </a>
+                    </div>
+
+                    <div
+                        class="col-md-4 col-sm-12 text-justify p-4 d-flex justify-content-center align-items-center flex-column">
+                        <h5 class="text-center text-purple fw-bold mb-3 dyn-font">Teatro L'Occitane</h5>
+                        <img src="./images/entretenimento/entretenimento-2.png" alt="Imagem da entrada do teatro"
+                            class="entretenimento-imagens img-fluid mb-3 rounded-3 dyn-font">
+                        <p class="dyn-font">O Teatro L´Occitane é uma escultura a céu aberto com arquitetura paradisíaca e impressionante
+                            que se funde à natureza.</p>
+                        <a href="https://teatroloccitane.com.br/" class="btn btn-3 dyn-font"> Saiba mais </a>
+                    </div>
+
+                    <div
+                        class="col-md-4 col-sm-12 text-justify p-4 d-flex justify-content-center align-items-center flex-column">
+                        <h5 class="text-center text-purple fw-bold mb-3 dyn-font">Igreja de São João Batista</h5>
+                        <img src="./images/entretenimento/entretenimento-3.png"
+                            alt="Imagem da igreja rodeada de árvores"
+                            class="entretenimento-imagens img-fluid mb-3 rounded-3 dyn-font">
+                        <p class="dyn-font">Construída no século XVIII de costas para o mar, a igreja é hoje um dos principais atrativos
+                            do famoso Quadrado de Trancoso.</p>
+                        <a href="http://www.paroquiadetrancoso.com.br/paginaprincipal.html" class="btn btn-3 dyn-font"> Saiba
+                            mais </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Fim Entretenimento -->
+
+    <!-- Vida Noturna -->
+    <section class="dark-container mt-4" id="vida-noturna">
+
+        <div class="container-fluid p-5 container">
+            <h6 class="text-uppercase text-purple text-center dyn-font">Vida Noturna</h6>
+            <h2 class="header-subtitulo text-center my-3 dyn-font"> Curte um passeio noturno?</h2>
+            <h2 class="text-center header-subtitulo mb-5 dyn-font">Separamos algumas opções para você se divertir!</h2>
+
+            <div class="row d-flex justify-content-center col-12 mt-4 entretenimento">
+                <div class="col-lg-9 col-md-12 col-sm-12 d-flex p-3">
+                    <img src="./images/entretenimento/noturno-1.png" alt="Imagem da fachada do local"
+                        class="noturno-imagens img-fluid mb-3">
+                    <div class="px-3 dyn-font">
+                        <h5>O Centro Music Bar</h5>
+                        <p>O bar oferece vários ambientes, shows ao vivo, samba e pagode toda quinta e som eclético de
+                            segunda à sábado. É um dos
+                            locais mais animados de Trancoso para se curtir a noite.</p>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12 col-sm-12 d-flex p-3 ">
+                    <img src="./images/entretenimento/noturno-2.png" alt="Imagem do local iluminado à noite, na praia"
+                        class="noturno-imagens img-fluid mb-3">
+                    <div class="px-3 dyn-font">
+                        <h5>Café de La Musique</h5>
+                        <p>Um ótimo local durante a noite em Trancoso é, certamente, o Café de La Musique, que atrai
+                            muitos turistas especialmente
+                            no verão e nas férias e oferece um ambiente musical bastante animado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fim Vida Noturna -->
+
+    <!-- Natureza -->
+    <section class="container mt-5">
+        <div class="container-fluid slide-2 justify-content-center align-items-center d-flex flex-column">
+            <h6 class="text-uppercase text-purple text-center dyn-font">NATUREZA</h6>
+            <h2 class="header-subtitulo text-center pt-3 mb-3 dyn-font">Vamos curtir ao ar livre?</h2>
+            <div class="container">
+                <div class="row col-12">
+    
+                    <div class="col-lg-4 col-sm-12 card-body">
+                        <div class="card-natureza p-3 shadow">
+                            <img src="images/natureza/T_PraiadoEspelho.jpg" alt="">
+                            <h5 class="text-center fw-bold my-3 dyn-font">Praia do Espelho</h5>
+                            <div class="d-flex">
+                                <div class="d-flex flex-column text-center">
+                                    <img src="images/natureza/1.png" alt="" class="foto-usuario mb-2 dyn-font">
+                                    <p class="dyn-font">Henrique</p>
+                                </div>
+                                <div class="ps-4 dyn-font">
+                                    <p class="dyn-font">"A praia tem uma água azulzinha, areia branquinha e fininha, uma paz e tranquilidade. Caminhando ao lado direito você encontra uma região bem rochosa e ao lado esquerdo corais incríveis."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-sm-12 card-body">
+                        <div class="card-natureza p-3 shadow">
+                            <img src="images/natureza/T_PraiadoRioVerde.jpg" alt="">
+                            <h5 class="text-center fw-bold my-3 dyn-font">Praia do Rio Verde</h5>
+                            <div class="d-flex">
+                                <div class="d-flex flex-column text-center">
+                                    <img src="images/natureza/2.png" alt="" class="foto-usuario mb-2 dyn-font">
+                                    <p class="dyn-font">Cleide</p>
+                                </div>
+                                <div class="ps-4 dyn-font">
+                                    <p class="dyn-font">"A praia de Rio Verde em Trancoso é uma das mais lindas que já vi, apesar do mar um pouco forte, dá para entrar e “pegar” umas ondas e aproveitar bastante o mar. Vale a pena conhecer."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 card-body">
+                        <div class="card-natureza p-3 shadow">
+                            <img src="images/natureza/T_PraiadosNativos.jpg" alt="">
+                            <h5 class="text-center fw-bold my-3">Praia dos Nativos</h5>
+                            <div class="d-flex">
+                                <div class="d-flex flex-column text-center">
+                                    <img src="images/natureza/3.png" alt="" class="foto-usuario mb-2">
+                                    <p class="dyn-font">Juliana</p>
+                                </div>
+                                <div class="ps-4 dyn-font">
+                                    <p class="dyn-font">"Praia com bastante barracas de praia, desde as mais simples até a s mais luxuosas. Nesta praia podemos ver o encontro do rio com o mar, muito boa para ir com crianças pequenas."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fim Natureza -->
+
+    <!-- Dicas Uteis -->
+    <section class="container p-5 slide-8">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 m-0 p-0 overflow-visible">
+                    <div class="imagem-slide-8">
+                        <div class="imagem-slide-8b"></div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <h6 class="text-purple text-center dyn-font">DICAS</h6>
+                    <h1 class="h1 my-4 dyn-font">Se liga nas dicas e aproveite!</h1>
+                    <p class="dyn-font">- Ao alugar o carro, fique atento aos locais de devolução;</p>
+                    <p class="dyn-font">- Muitos hotéis proporcionam reeições inclusas porém, caso não o pacote escolhido por
+                        você
+                        procure
+                        restaurantes com fácil mobilidade;</p>
+                    <p class="dyn-font">- Monte um roteiro com programção desejadas e valores, caso haja;</p>
+                    <p class="dyn-font">- Avalie as redes de atendimento médico nos arredores do destino.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fim Dicas Uteis -->
+
+    <!-- Footer -->
+    <section class="">
+        <!-- Footer -->
+        <footer class="bg-light text-black">
+            <div class="container p-5">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-12 col-sm-12 mb-3 mb-md-0">
+                        <h5 class="text-uppercase"><i class="fa-solid fa-paper-plane dyn-font"></i> GLVR</h5>
+                        <p class="pt-3 footer-links dyn-font">
+                            Viajar nunca foi tão fácil! Nos acompanhe nas redes sociais:
+                        </p>
+                        <div>
+                            <div class="text-left">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="#" class="btn-floating btn-sm icones-footer"><i
+                                                class="fab fa-facebook"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="btn-floating btn-sm icones-footer"><i
+                                                class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="btn-floating btn-sm icones-footer"><i
+                                                class="fab fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 col-sm-6 mb-3 mb-md-0">
+                        <h5 class="footer-titulo dyn-font">Companhia</h5>
+
+                        <ul class="list-unstyled mb-0 pt-3">
+                            <li>
+                                <a href="#!" class="footer-links dyn-font">Sobre nós</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-links dyn-font">Destinos</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-links dyn-font">Passagens</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-links dyn-font">Fale conosco</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 col-sm-6 mb-3 mb-md-0">
+                        <h5 class="footer-titulo dyn-font">Ajuda</h5>
+
+                        <ul class="list-unstyled pt-3">
+                            <li>
+                                <a href="#!" class="footer-links dyn-font">SAC</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-links dyn-font">Cancele a viagem</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 col-sm-6 mb-3 mb-md-0">
+                        <h5 class="footer-titulo dyn-font">Mais</h5>
+
+                        <ul class="list-unstyled pt-3">
+                            <li>
+                                <a href="#!" class="footer-links dyn-font">Voos domésticos</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-links dyn-font">Parcerias</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-links dyn-font">Trabalhos</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 col-sm-6 mb-3 mb-md-0">
+                        <h5 class="footer-titulo dyn-font">Termos</h5>
+
+                        <ul class="list-unstyled pt-3">
+                            <li>
+                                <a href="#!" class="footer-links dyn-font">Política privada</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-links dyn-font">Termos de uso</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-links dyn-font">Acessibilidade</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="text-center p-3 dyn-font" style="background-color: rgba(0, 0, 0, 0.2);"> Projeto Gulliver | Todos os
+                direitos reservados ©
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </section>
+    <!-- Fim Footer -->
+
+    <!-- Leitor Libras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- Fim Leitor Libras -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

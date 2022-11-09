@@ -1,0 +1,243 @@
+/* CORES EM ALTO CONTRASTE */
+.contrast,
+.contrast nav,
+.contrast div,
+.contrast li,
+.contrast ol,
+.contrast header,
+.contrast footer,
+.contrast section,
+.contrast main,
+.contrast aside,
+.contrast article {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+.contrast section {
+  border: 1px solid #fff;
+}
+
+.contrast {
+  padding: 1rem;
+}
+
+.contrast h1,
+.contrast h2,
+.contrast h3,
+.contrast h4,
+.contrast h5,
+.contrast h6,
+.contrast p,
+.contrast label,
+.contrast strong,
+.contrast em,
+.contrast cite,
+.contrast q,
+.contrast a,
+.contrast i,
+.contrast b,
+.contrast u,
+.contrast span {
+  color: #fff !important;
+}
+
+vw-text-active {
+  color: #f2f2f2 !important;
+}
+
+.vw-text:hover {
+  color: #9b9b9b !important;
+}
+
+/* -- LINHA ACIMA DO TÍTULO -- */
+
+.line {
+  height: 1.5px;
+  background-color: #ac58f5;
+  width: 250px;
+}
+
+/* -- CARROSSEL DE IMAGENS -- */
+
+.carousel-inner-header img {
+  height: 80vh;
+  object-fit: cover;
+}
+
+.carousel-header-texto {
+  top: 20%;
+  right: 90% ;
+}
+
+.carousel-inner-header img {
+  height: 80vh;
+  object-fit: cover;
+}
+
+.carousel-header-texto {
+  top: 20%;
+  right: 90% ;
+}
+
+.carousel-header-texto h1 {
+  font-family: "Merriweather";
+  font-size: 6.1rem;
+  text-shadow: 2px 2px #0f172a;
+}
+
+.carousel-header-texto h1 {
+  font-family: "Merriweather";
+  font-size: 6.1rem;
+  text-shadow: 2px 2px #0f172a;
+}
+
+/* -- ÁREA DE HOSPEDAGENS -- */
+
+.container-hospedagem {
+  background-color: #a3aea573;
+}
+
+.hospedagem-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.hospedagem-wrapper .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 .5em;
+  width: 320px;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.hospedagem-wrapper .card img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.caurosel-sm {
+  opacity: 0;
+}
+
+
+/* -- SLIDE 7: CULTURA E HISTÓRIA -- */
+
+.imagem-slide-7 {
+  background-image: url(../images/background/frame.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.imagem-slide-7b {
+  background-image: url(../images/background/frame.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 90vw;
+  bottom: 50px;
+  z-index: -1;
+}
+
+/* -- GASTRONOMIA -- */
+
+.card-restaurante {
+  font-family: "Poppins";
+  min-height: 40px;
+  text-align: center;
+  border-radius: 0 0 1.5em 1.5em;
+}
+
+/* -- ENTRETENIMENTO E VIDA NOTURNA -- */
+
+.entretenimento {
+  font-family: 'Poppins';
+  font-weight: 300;
+}
+
+.dark-container { 
+  background-color: #0F172A;
+  color: #fff;
+}
+
+.noturno-imagens {
+  height: 120px;
+}
+
+/* -- NATUREZA -- */
+
+.card-natureza{
+  /* background-color: red; */
+  width: 95%;
+  border-radius: 20px;
+  font-family: 'Poppins';
+}
+
+.card-natureza p {
+  font-size: 12px;
+}
+
+.card-natureza img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.card-natureza .foto-usuario {
+  width: 60px;
+}
+
+/* -- SLIDE 8: DICAS ÚTEIS -- */
+
+.imagem-slide-8 {
+  background-image: url(../images/background/rectangle-up-right.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: -10vw;
+  top: 0px;
+  z-index: -1;
+}
+
+.imagem-slide-8b {
+  background-image: url(../images/background/dicas-image.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 60%;
+  height: 60%;
+  position: relative;
+  left: 18rem;
+  top: 6rem;
+  z-index: -1;
+}
+
+/* -- ALUGUE SEU CARRO -- */
+
+.alugue-container input {
+  border-radius: 20px;
+  border: none;
+}
+
+.alugue-container-text {
+  width: 350px;
+  text-align: center;
+  font-family: 'Poppins';
+}
+
+
+@media screen and (max-width: 768px) {
+  .card:not(:first-child) {
+    display: none;
+  }
+}
