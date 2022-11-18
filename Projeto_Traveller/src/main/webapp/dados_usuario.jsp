@@ -45,7 +45,7 @@
             <menu class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page"  href="/Projeto_Traveller/index.html">Home</a>
                     </li>
 
                     <li class="nav-item">
@@ -71,8 +71,7 @@
                                     onclick="decreaseFont()">A-</a>
                         </div>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                	<a href=#><img src="./assets/images/avatar.jpg" width="30px" height="30px" alt="Usuário"></a>
-                    <button class="btn btn-2" type="button">Cadastrar-se</button>
+                	<a href=#><img src="./images/avatar.png" width="30px" height="30px" alt="Usuário"></a>
                 </div>
             </menu>
         </div>
@@ -85,8 +84,8 @@
         <div class="imagens-slide-1"></div>
         <div class="imagens-slide-2"></div>
         <div class="container p-5 slide-1 pb-2">
-            <h5 class="text-purple dyn-font">Olá Samuel!</h5>
-            <h1 class="header-titulo py-4 dyn-font">Que bom<br> que você voltou!</h1>
+            <h1 class="text-purple py-4 dyn-font">Olá Samuel!</h1>
+            <h4 class="header-titulo py-4 dyn-font">Que bom<br> que você voltou!</h4>
             <h5 class="text-muted dyn-font">Vamos organizar a sua próxima viagem</h5>
         </div>
 
@@ -533,7 +532,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
         </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/js/script.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 

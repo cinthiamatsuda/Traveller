@@ -564,3 +564,7 @@ vw-text-active {
   object-fit: cover;
   height: 250px;
 }
+
+.pointer {
+    cursor: pointer;
+}
